@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+/* Reset */
+html {
+  font-family: 'Montserrat';
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display';
+  font-weight: 700;
+}
+
+h3 {
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  font-style: italic;
+}
+
+.header__content {
+  max-width: 37.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-small {
+  display: flex;
+}
+
+.text-small p {
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 0;
+  color: #4F4F4F;
+  line-height: 1rem;
+  margin-left: 1.417rem
+}
+
+.header__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  margin: 5rem auto 1rem auto;
+  color: #828282;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 0.68rem;
+}
+
+.time {
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.time__item {
+  display: flex;
+}
+
+.time__item--icon {
+  font-size: 1.7rem;
+}
+
+.time__item--yellow {
+  color: #F2994A;
+}
+
+.time__item--text {
+  padding-left: 0.5rem;
+}
+
+.time__item--text span {
+  font-weight: 700;
+  font-size: 70%;
+  color: #BDBDBD;
+}
+
+.time__item--text p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.check__spice {
+  margin-top: 2.5rem;
+}
+
+.check__spice h3 {
+  margin-bottom: 2rem;
+  color: #333333;
+}
+
+.check__spice--checkbox {
+  display: flex;
+  color: #333333;
+}
+
+.check__spice--checkbox+.check__spice--checkbox {
+  margin-top: 0.7rem;
+}
+
+.check__spice--checkbox input {
+  margin-right: 1rem;
+}
+
+.check__spice--checkbox span {
+  font-weight: 600;
+}
+
+.content__item--order {
+  display: flex;
+  color: #333333;
+}
+
+.content__item--order+.content__item--order {
+  margin-top: 0.7rem;
+}
+
+.number {
+  text-align: center;
+  background: #F2994A;
+  border-radius: 6px;
+  color: #FFFFFF;
+  font-size: 24px;
+  width: 36px;
+  height: 36px;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: bold;
+  line-height: 150%;
+  margin-right: 1.1rem;
+}
+
+.content__item--order+.content__item--order {
+  margin-top: 4rem;
+}
+
+.content__item--order p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.2rem;
+
+  color: #000000;
+}
+
+.ingredients, .instructions {
+  max-width: 750px;
+}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    margin-top: 2.8rem;
+  }
+
+  .text-small p {
+    line-height: 1.25rem;
+  }
+
+  .time {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .time__item--yellow {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .time__item--black {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2.5rem;
+  }
+
+  .check__spice--checkbox {
+    font-size: 1.167rem;
+    line-height: 2rem;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  .check__spice--checkbox input {
+    margin-right: 0.75;
+  }
+
+  .content__item--order p {
+    font-size: 1.333rem;
+    line-height: 1.667rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  html {
+    font-size: 12px;
+  }
+}
