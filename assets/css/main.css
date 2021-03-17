@@ -3,6 +3,7 @@
 /* Reset */
 html {
   font-family: 'Montserrat';
+  line-height: 1.7rem;
 }
 
 p {
@@ -18,14 +19,30 @@ h6 {
   font-weight: 700;
 }
 
+h1 {
+  font-size: 3.2rem;
+}
+
 h3 {
   font-family: 'Playfair Display';
   font-weight: 400;
   font-style: italic;
 }
 
+input[type=checkbox] {
+    -ms-transform: scale(1.5);
+    /* IE */
+    -moz-transform: scale(1.5);
+    /* FF */
+    -webkit-transform: scale(1.5);
+    /* Safari and Chrome */
+    -o-transform: scale(1.5);
+    /* Opera */
+    transform: scale(1.5);
+}
+
 .header__content {
-  max-width: 37.5rem;
+  max-width: 42rem;
   margin-bottom: 1rem;
 }
 
@@ -38,7 +55,7 @@ h3 {
   font-style: italic;
   margin-top: 0;
   color: #4F4F4F;
-  line-height: 1rem;
+  line-height: 1.4rem;
   margin-left: 1.417rem
 }
 
@@ -59,19 +76,34 @@ h3 {
 }
 
 .container {
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 0.68rem;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
 .time {
   display: flex;
   margin-top: 2rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  height: fit-content;
   justify-content: space-around;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 13.5rem;
 }
 
 .time__item {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.3rem 0;
+  line-height: 1rem;
 }
 
 .time__item--icon {
@@ -162,15 +194,30 @@ h3 {
   color: #000000;
 }
 
-.ingredients, .instructions {
+.check, .instructions {
   max-width: 750px;
 }
 
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1200px) {
+  .ingredients {
+    display: unset;
+  }
+
+  .time {
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 
 @media screen and (max-width: 768px) {
   html {
     font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.714rem;
   }
 
   body {
@@ -221,3 +268,13 @@ h3 {
     font-size: 12px;
   }
 }
+
+/* automic */
+
+  .mt--3{
+    margin-top: 3rem !important;
+  }
+  
+  .mb--3{
+    margin-bottom: 3rem !important;
+  }
